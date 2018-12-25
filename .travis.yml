@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+- stable
+cache:
+  directories:
+  - node_modules
+deploy:
+  provider: pages
+  skip-cleanup: true
+  local_dir: public
+  keep-history: true
+  on:
+    branch: master
+  github-token:
+    secure: EPwDiYKM2wCBPg3bWScjjc9F+bwHfr+94/B4NQSWSz9FKFafMBJRdYsp/kNOtgu1VfPySgyI/hYNL0JREgfWBL/EI0AE5l06aIHHA/kexD/QMCSowQKcy0+hv/5baDACUMgpb+YPVopvHNG19xppe2ZUFeyCIlhzj18AEKBK9d4kqTSzRFCIOauUlGqSubApzmfvJ63vGX81olgtXtLxcoaYuIJjiueyELTsIQ0/BxdODyiR7BA1wmFxAYAeT6/lgm2xWLoHoq5qgesineHVQ3Sq5Joc0sN152k2vlX+7DY7OEOpxfGs4mAjDWW4dOI+iTgPvFhDgVmI2WzQ3UC97x06OLtof95YwBtN+aFH1Zh3M9Phrk2uOi1FSZdaxgkyNzWwOLIvFtwdZnEfw7ax9Ab0eIWipPTY8zuoj65DqbP0bwszPogXQdunP61YHH+S6Y1ead/OaYX1ZDSNs2JpBeYeOSGrMwDzP8/FrjkuDxl+rkHXs2fHDibOUJMW0j3JlogAXdRAD8x3xagzyCCsNzr69Uyk52yX/NCociOlwNg4bs5c7cS+07PS3zIuwQQWq0w1IeG5rYrfXq5xM9w6Cxc+uvHhEoeF4tbz+JPGZVKIj2yPAARhVTg+AfCS5cRz90HDnNZk0CfKhB4pqEc5uWYQiBYSCKsfl3NER88P1H8=
+before_script:
+- npm i -g gatsby
+- npm i
+script:
+- npm run test
+after_success:
+- npm run deploy
