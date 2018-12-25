@@ -11,7 +11,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import avatar from '../images/avatar-iman.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -158,7 +158,7 @@ const Index = () => (
       <Content speed={0.4} offset={0}>
         <Hero>
           <BigTitle>
-            Hello, <br /> I'm John Doe.
+            Hello, <br /> I'm Donghua Liu.
           </BigTitle>
           <Subtitle>I'm creating noice web experiences for the next generation of consumer-facing companies.</Subtitle>
         </Hero>
@@ -285,9 +285,8 @@ const Index = () => (
         <Inner>
           <Title>Get in touch</Title>
           <ContactText>
-            Say <a href="mailto:plizNoSp4m@domain.tld">Hi</a> or find me on other platforms:{' '}
-            <a href="https://dribbble.com/LekoArts">Dribbble</a> &{' '}
-            <a href="https://www.instagram.com/lekoarts.de/">Instagram</a>
+            Say <a href="mailto:liudonghua123@gmail.com">Hi</a> or find me on other platforms:{' '}
+            <a href="https://github.com/liudonghua123">GitHub</a>
           </ContactText>
         </Inner>
         <Footer>
